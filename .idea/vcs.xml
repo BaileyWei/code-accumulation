@@ -3,5 +3,16 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/code-accumulation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/FLAN" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/alpaca-lora" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/alpaca-stanford" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/amended_us" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/amendment note" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/ee/CCKS-2021-Financial-Event-Extraction_Rank-6th" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/ee/PLMEE" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/ee/eventextraction" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/hh-rlhf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/self-instruct" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/stanford_alpaca" vcs="Git" />
   </component>
 </project>
