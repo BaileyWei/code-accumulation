@@ -1,0 +1,11 @@
+In Code
+We know how fine-tuning with NSP and MLM works, but how exactly do we apply that in code?
+Well, we can start by importing transformers, PyTorch, and our training data — Meditations (find a copy of the training data here).
+Now we have a list of paragraphs in text — some, but not all, contain multiple sentences. Which we need when building our NSP training data.
+Preparing For NSP
+To prepare our data for NSP, we need to create a mix of non-random sentences (where the two sentences were originally together) — and random sentences.
+For this, we’ll create a bag of sentences extracted from text which we can then randomly select a sentence from when creating a random NotNextSentence pair.
+After creating our bag we can go ahead and create our 50/50 random/non-random NSP training data. For this, we will create a list of sentence As, sentence Bs, and their respective IsNextSentence or NotNextSentence labels.
+We can see in the console output that we have label 1 representing random sentences (NotNextSentence) and 0 representing non-random sentences (IsNextSentence).
+Tokenization
+We can now tokenize our data. As is typical with BERT models, we truncate/pad our sequences to a length of 512 tokens.

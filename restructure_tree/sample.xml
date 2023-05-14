@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE billtext SYSTEM "/segue/xml_schemas/bill/2.0/billtext.dtd">
+<billtext version="2.0" >
+ <text_id>
+  <id_key>
+   <state>DC</state>
+   <session_id>2021000</session_id>
+   <legtype>B</legtype>
+   <billnum>150</billnum>
+  </id_key>
+  <version>Enacted - Emergency Act</version>
+  <version_date>20210503</version_date>
+  <version_sequence>0</version_sequence>
+ </text_id>
+ <transmission_info>
+  <process_date>20210527</process_date>
+ </transmission_info>
+ <document>
+  <head>
+   <p class="center">DC B 150</p>
+   <p class="center">ACT 57</p>
+   <p class="center">AN ACT </p>
+   <p class="center">IN THE COUNCIL OF THE DISTRICT OF COLUMBIA </p>
+  </head>
+  <code>
+   <p class="left">To approve, on an emergency basis, Modification Nos. 8, 9, 10, 11, 12, and 13 to Human Care Agreement No. RM-17-HCA-SATSR-004-CSS-BY4-CPS with Clean &amp; Sober Streets, Inc. to provide Level III substance abuse treatment services, and to authorize payment for the goods and services received and to be received under the modifications. </p>
+  </code>
+  <text>
+   <enact_clause>
+    <p class="indent">BE IT ENACTED BY THE COUNCIL OF THE DISTRICT OF COLUMBIA, That this act may be cited as the &ldquo;Modifications to Human Care Agreement No. RM-17-HCA-SATSR-004-CSS-BY4-CPS with Clean &amp; Sober Streets, Inc. Approval and Payment Authorization Emergency Act of 2021&rdquo;. </p>
+   </enact_clause>
+   <p class="indent">Sec. 2. Pursuant to section 451 of the District of Columbia Home Rule Act, approved December 24, 1973 (87 Stat. 803; D.C. Official Code &sect; 1-204.51), and notwithstanding the requirements of section 202 of the Procurement Practices Reform Act of 2010, effective April 8, 2011 (D.C. Law 18-371; D.C. Official Code &sect; 2-352.02), the Council approves Modification Nos. 8, 9, 10, 11, 12, and 13 to Human Care Agreement No. RM-17-HCA-SATSR-004-CSS-BY4-CPS with Clean &amp; Sober Streets, Inc. to provide Level III substance abuse treatment services and authorizes payment in the not-to-exceed amount of $2.2 million for the goods and services received and to be received under the modifications. </p>
+   <p class="indent">Sec. 3. Fiscal impact statement. </p>
+   <p class="indent">The Council adopts the fiscal impact statement of the Chief Financial Officer as the fiscal impact statement required by section 4a of the General Legislative Procedures Act of 1975, approved October 16, 2006 (120 Stat. 2038; D.C. Official Code &sect; 1-301.47a). </p>
+   <effective_clause>
+    <p class="indent">Sec. 4. Effective date. </p>
+    <p class="indent">This act shall take effect following approval by the Mayor (or in the event of veto by the Mayor, action by the Council to override the veto), and shall remain in effect for no longer than 90 days, as provided for emergency acts of the Council of the District of Columbia in section 412(a) of the District of Columbia Home Rule Act, approved December 24, 1973 (87 Stat. 788; D.C. Official Code &sect; 1-204.12(a)). </p>
+   </effective_clause>
+  </text>
+ </document>
+</billtext>
