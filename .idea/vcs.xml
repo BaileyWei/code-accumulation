@@ -4,7 +4,9 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/code-accumulation" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/code-accumulation/FLAN" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/FLAN-m" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/code-accumulation/alpaca-lora" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code-accumulation/alpaca-lora-m" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/code-accumulation/alpaca-stanford" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/code-accumulation/amended_us" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/code-accumulation/amendment note" vcs="Git" />
