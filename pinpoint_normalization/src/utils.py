@@ -1,5 +1,6 @@
 import re
 import numpy as np
+from copy import deepcopy
 
 definition_pattern = re.compile(r"\([^\s]+\)")
 designator_pattern = re.compile(r"\“.+?\”")  # find full designator
@@ -50,8 +51,8 @@ def pinpoint_complement(text, pinpoint_list, particle):
         if re.search(f'{a} (through|to|-) {b}', text):
             a_num_tuple = pinpoint_to_num_tuple(a, particle.lower())
             b_num_tuple = pinpoint_to_num_tuple(b, particle.lower())
-            through = through(a_num_tuple[:-1], b_num_tuple[:-1])
-            for num_tuple in through:
+            throughs = through(a_num_tuple[:-1], b_num_tuple[:-1])
+            for num_tuple in throughs:
                 p = num_tuple_to_pinpoint(num_tuple, particle, a_num_tuple[-1])
                 pinpoint_res.append(p)
         else:
@@ -363,3 +364,47 @@ def int2roman(num: int) -> str:
             num -= storeIntRoman[i][0]
     return Roman
 
+def find_edges(entity_dict, edges, in_degree):
+    visited = {k: 0 for k in entity_dict.keys()}
+    result = []
+    valid = True
+    #     for k,v in edges_1.items():
+    #         print(k,k.key,v)
+
+    # 将所有入度为 0 的节点放入队列中
+    queue = [entity_dict[key] for key in edges.keys() if in_degree[key] == 0]
+
+    #     print(queue)
+    def dfs(u, node_list=None):
+        if not node_list:
+            node_list = []
+        nonlocal valid
+        # 将节点标记为「搜索中」
+        visited[u.key] = 1
+        # 搜索其相邻节点
+        # 只要发现有环，立刻停止搜索
+        for v in edges[u.key]:
+            # 如果「未搜索」那么搜索相邻节点
+            if visited[v.object_entity.key] != 1:
+                #                 print(v)
+                dfs(v.object_entity, node_list=deepcopy(node_list + [(u, v.relation, v.object_entity)]))
+                if not valid:
+                    return
+            # 如果「搜索中」说明找到了环
+            elif visited[v.key] == 1:
+                valid = False
+                #                 print(v)
+                #                 print('100000')
+                return
+                # 将节点标记为「已完成」
+        visited[u.key] = 2
+        node_list.append((u, '', 'end'))
+        if not edges[u.key]:
+            result.append(deepcopy(node_list))
+
+    for q in queue:
+        valid = True
+        if not visited[q.key]:
+            dfs(q)
+
+    return result
